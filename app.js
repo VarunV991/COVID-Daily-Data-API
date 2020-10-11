@@ -27,7 +27,7 @@ app.get('/canada',function(req,res){
         var canadaRecovered = 0;
         var canadaDeaths = 0;
         for(var i = 3;i<16;i++){
-            $("#mw-content-text > div.mw-parser-output > table:nth-child(14) > tbody > tr:nth-child("+i+")").each((index,element) =>{
+            $("#mw-content-text > div.mw-parser-output > table:nth-child(16) > tbody > tr:nth-child("+i+")").each((index,element) =>{
                 var cdata = $(element).find("td");
                 var statename = $(cdata[0]).text();
                 var cases = parseInt($(cdata[4]).text().replace(',',''));
